@@ -302,8 +302,10 @@ body::after {
 
     .search-bar {
 
-        width: 100%;
-
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: none !important;
+        display: block;
         border-radius: 14px !important;
 
         height: 55px;
@@ -313,7 +315,7 @@ body::after {
 
     .btn-success {
 
-        width: 100%;
+        width: 100% !important;
 
         height: 52px;
 
@@ -334,5 +336,12 @@ body::after {
     .buttons .btn {
 
         width: 100%;
+    }
+    .input-group > .form-control,
+    .input-group > .btn {
+
+    width: 100%;
+
+    flex: none;
     }
 }
