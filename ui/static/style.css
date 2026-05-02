@@ -187,11 +187,27 @@ body::after {
 
 .search-bar:focus {
 
+    background: #020617 !important;
+
+    color: white !important;
+
     box-shadow:
     0 0 15px rgba(56,189,248,0.2);
 
     border-color:
     rgba(56,189,248,0.4);
+
+    outline: none;
+}
+
+.search-bar:active,
+.search-bar:focus-visible {
+
+    background: #020617 !important;
+
+    color: white !important;
+
+    outline: none;
 }
 
 .search-bar::placeholder {
