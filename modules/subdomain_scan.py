@@ -1,7 +1,7 @@
 import dns.resolver
 import random
 import string
-
+import requests
 
 def scan_subdomains(domain):
 
