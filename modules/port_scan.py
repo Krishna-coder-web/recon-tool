@@ -6,7 +6,7 @@ def scan_ports(target):
 
     scanner = nmap.PortScanner()
 
-    scanner.scan(target, '1-100', arguments='-T4')
+    scanner.scan(target, '1-65535', arguments='-T4')
 
     open_ports = []
 
